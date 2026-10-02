@@ -1,0 +1,8 @@
+services:
+  museum-web:
+    build: .
+    image: artmuseum-group-visit:latest
+    container_name: artmuseum-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped
