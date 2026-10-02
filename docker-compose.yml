@@ -1,0 +1,8 @@
+services:
+  museum-web:
+    build: .
+    image: museum-group-ops:latest
+    container_name: museum-group-ops
+    ports:
+      - "8080:80"
+    restart: unless-stopped
